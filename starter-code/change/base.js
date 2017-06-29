@@ -9,4 +9,8 @@ $(document).ready(function(){
     let summand2 = Number($('#right').val());
     $('#total').val(summand1 + summand2);
   });
+
+  $('#reset').on('click', function (e) {
+    $('input').val('');
+  })
 })
